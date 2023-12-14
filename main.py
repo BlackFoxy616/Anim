@@ -9,11 +9,6 @@ api_id = 3702208
 api_hash = "3ee1acb7c7622166cf06bb38a19698a9"
 bot_token = "6949923423:AAF6CnXxgA8I-xI_Wao-tTLAnVORxKiBsBw"
 
-app = Client(
-    "my_bot",
-    api_id=api_id, api_hash=api_hash,
-    bot_token=bot_token
-)
 
 
 
@@ -34,7 +29,9 @@ async def start_command(client,message):
              
          reply_markup=InlineKeyboardMarkup(button_list)
          await app.send_message(
-            cdid,"Select The Required Drama:",reply_markup=reply_markup)
+            cdid,"Select:",reply_markup=reply_markup)
+
+
 
 @app.on_callback_query()
 async def answer(client, call):
