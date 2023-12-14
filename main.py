@@ -5,10 +5,17 @@ from pyrogram.types import (ReplyKeyboardMarkup, InlineKeyboardMarkup,
                             InlineKeyboardButton)
 
 # Create a client using your bot token
+
 api_id = 3702208
 api_hash = "3ee1acb7c7622166cf06bb38a19698a9"
 bot_token = "6949923423:AAF6CnXxgA8I-xI_Wao-tTLAnVORxKiBsBw"
 
+
+app = Client(
+    "Anime",
+    api_id=api_id, api_hash=api_hash,
+    bot_token=bot_token
+)
 
 
 
